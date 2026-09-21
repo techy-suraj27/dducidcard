@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eef2f7;
+    color: #142033;
+}
+
+
+/* Main Page */
+
+.page {
+    width: 100%;
+    max-width: 760px;
+    margin: 35px auto;
+    background: white;
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Header */
+
+.header {
+    background: #153b78;
+    color: white;
+    text-align: center;
+    padding: 48px 20px 40px;
+}
+
+.header h1 {
+    font-size: 32px;
+    line-height: 1.45;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.header p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #9fc7ff;
+}
+
+
+/* Verification */
+
+.verification {
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #e8f8f1;
+    border-bottom: 2px solid #d1f2e2;
+
+    color: #08a66b;
+    font-size: 21px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+}
+
+.verification span {
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+
+/* Main Content */
+
+.content {
+    padding: 45px 42px;
+}
+
+
+/* Profile Image */
+
+.photo-container {
+    width: 260px;
+    height: 300px;
+
+    margin: 0 auto 55px;
+
+    padding: 7px;
+
+    border: 6px solid #f4c3e6;
+    border-radius: 32px;
+
+    background: #eee;
+
+    overflow: hidden;
+}
+
+.photo-container img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+}
+
+
+/* Information Card */
+
+.info-card {
+    width: 100%;
+
+    min-height: 120px;
+
+    margin-bottom: 22px;
+
+    padding: 25px 28px;
+
+    background: #fafbfc;
+
+    border: 2px solid #e1e6ec;
+    border-radius: 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.label {
+    color: #68798e;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+    margin-bottom: 10px;
+}
+
+
+.value {
+    color: #101b2d;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    line-height: 1.3;
+
+    word-break: break-word;
+}
+
+
+/* Two Column Layout */
+
+.grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 0 22px;
+}
+
+
+/* Email */
+
+.email {
+    font-size: 24px;
+}
+
+
+/* Address */
+
+.address {
+    line-height: 1.4;
+}
+
+
+/* Active Status */
+
+.active {
+    color: #09a86d;
+}
+
+
+/* Footer */
+
+.footer {
+    border-top: 1px solid #e4e8ed;
+
+    padding: 28px 42px;
+
+    display: flex;
+    justify-content: space-between;
+
+    color: #6c7a8d;
+
+    font-size: 17px;
+}
+
+.footer b {
+    color: #172235;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    body {
+        background: #eef2f7;
+    }
+
+    .page {
+        margin: 15px;
+        border-radius: 25px;
+    }
+
+    .header {
+        padding: 38px 15px 32px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .header p {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .verification {
+        height: 65px;
+        font-size: 16px;
+    }
+
+    .content {
+        padding: 30px 22px;
+    }
+
+    .photo-container {
+        width: 220px;
+        height: 255px;
+
+        margin-bottom: 40px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .info-card {
+        min-height: 105px;
+        padding: 21px;
+        border-radius: 20px;
+    }
+
+    .label {
+        font-size: 16px;
+    }
+
+    .value {
+        font-size: 22px;
+    }
+
+    .email {
+        font-size: 20px;
+    }
+
+    .footer {
+        padding: 22px;
+        font-size: 14px;
+    }
+}
